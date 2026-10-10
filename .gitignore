@@ -1,26 +1,17 @@
-﻿# Java and Spring Boot
-backend/target/
-*.class
-*.log
+﻿# Python environment and private configuration
+.venv/
+__pycache__/
+*.py[cod]
+backend/.env
+**/.env
+*.db
+instance/
+.pytest_cache/
 
-# Secrets and local configuration
-.env
-.env.*
-!.env.example
-backend/src/main/resources/application.properties
+# Local editor settings and accidental upload files
+.vscode/
+backend/download
 
-# Frontend
+# Frontend dependencies and build output
 frontend/node_modules/
 frontend/dist/
-
-# IDE and OS
-.idea/
-.vscode/
-.DS_Store
-Thumbs.db
-
-# Backend build output
-backend/target/
-
-# Local diagnostic logs
-backend/startup-error.txt
